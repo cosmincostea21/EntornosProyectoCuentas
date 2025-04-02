@@ -17,7 +17,9 @@ public class EntornosCuentas {
         // TODO code application logic here
         
         Cuenta miCuenta;
+        
         double saldoActual;
+        
         
         miCuenta = new Cuenta("Cosmin Costea", "1000-2365-45-123456789",5000.0,1.0);
         saldoActual = miCuenta.estado();
@@ -27,12 +29,11 @@ public class EntornosCuentas {
         
         try{
             
-            miCuenta.retirar(2300);
+            miCuenta.retirar(200);
             miCuenta.ingresar(695);
         } catch(Exception e){
             System.out.println(e.getMessage());
         }
-        
         
         
     }
